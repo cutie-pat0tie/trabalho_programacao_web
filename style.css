@@ -1,0 +1,248 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 10vw);
+  grid-template-rows: 8vh 92vh 100vh 100vh 100vh 92vh 8vh;
+}
+
+/*navbar*/
+.container > .navbar {
+  background-color: rgb(255, 0, 106);
+  grid-column: 1 / 11;
+  grid-row: 1 / 2;
+  padding: 15px 100px;
+}
+
+.container > .navbar > ul {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.container > .navbar > ul > li {
+  list-style: none;
+}
+
+.container > .navbar > ul > li, a {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-decoration: none;
+}
+
+
+/*inicio*/
+.container > .inicio {
+  background-color: rgb(20, 20, 20);
+  grid-column: 1 / 11;
+  grid-row: 2 / 3;
+
+}
+
+.container > .inicio > h1 {
+  padding-top: 35vh;
+  padding-bottom: 10px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.container > .inicio > h2 {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 0, 106);
+}
+
+/*sobre mim*/
+.container > .sobre_mim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  grid-column: 1 / 11;
+  grid-row: 3 / 4;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.container > .sobre_mim > .card {
+  border: solid, black, 2px;
+  border-radius: 20px;
+  background-color: rgb(255, 0, 106);
+  color: white;
+  width: 500px;
+  height: 175px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-align: center;
+}
+.container > .sobre_mim > h2 {
+  color: white;
+  padding-bottom: 15px;
+  font-size: 40px;
+
+}
+.container > .sobre_mim > .card > h3 {
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+/*formação*/
+.container > .formacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  grid-column: 1 / 11;
+  grid-row: 4 / 5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+}
+
+.container > .formacao > h2 {
+  color: white;
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+
+.container > .formacao > section > h3 {
+  padding-bottom: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.container > .formacao > section > p {
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgb(255, 0, 106)
+}
+
+/*projetos*/
+.container > .projetos {
+  grid-column: 1 / 11;
+  grid-row: 5 / 6;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+}
+
+.container > .projetos > h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.container > .projetos > p {
+  padding-bottom: 20px;
+}
+
+.container > .projetos > section {
+  width: 50vw;
+  text-align: center;
+}
+
+.container > .projetos > section > h3 {
+  font-size: 25px;
+}
+
+.container > .projetos > section > p {
+  padding-bottom: 35px;
+  color: rgb(255, 0, 106);
+}
+
+
+
+
+/*contato*/
+.container > .contato {
+  grid-column: 1 / 11;
+  grid-row: 6 / 7;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container > .contato > h2 {
+  color: white;
+  padding-bottom: 25px;
+  font-size: 40px;
+}
+
+.container > .contato > form {
+  background-color: rgb(255, 0, 106);
+  width: 60vw;
+  height: 60vh;
+  border-radius: 10px;
+  color: white;
+}
+
+.container > .contato > form > input {
+  width: 50vw;
+  height: 5vh;
+  margin-top: 30px;
+  margin-left: 5vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+
+.container > .contato > form > textarea {
+  width: 50vw;
+  height: 25vh;
+  margin-top: 30px;
+  margin-left: 5vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+
+.container > .contato > form > button {
+  width: 20vw;
+  height: 5vh;
+  margin-top: 10px;
+  margin-left: 20vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border-color: white;
+  border-radius: 15px;
+  color: rgb(255, 0, 106);
+
+}
+
+/*footer*/
+.container > .footer {
+  grid-column: 1 / 11;
+  grid-row: 7 / 8;
+  background-color: rgb(255, 0, 106);
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > .footer > p {
+  text-align: center;
+  color: white;
+}
+
